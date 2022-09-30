@@ -1,7 +1,11 @@
-import '../styles/globals.css'
+// Global Styles
+import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+// Icons
+import 'boxicons';
+
+function App({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default App;
