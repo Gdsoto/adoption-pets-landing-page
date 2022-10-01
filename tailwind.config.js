@@ -5,44 +5,57 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 // Fonts
 const {
-  NUNITO_REGULAR,
-  NUNITO_SEMIBOLD,
-  NUNITO_BOLD,
-  BREE_REGULAR,
-  LIGHT_GREEN,
-  DARK_GREEN,
-  LIGHT_ORANGE,
-  DARK_ORANGE,
-  LIGHT_PINK,
+  INTER_REGULAR,
+  INTER_SEMIBOLD,
+  INTER_BOLD,
+  ALBERT_SEMIBOLD,
+  ALBERT_BOLD,
+  GREEN_700,
+  GREEN_400,
+  GRAY_200,
+  GRAY_500,
+  GRAY_800,
+  PINK_700,
+  PINK_500,
+  PINK_300,
   WHITE,
-} = require('./styles/styles.constants');
+  BLACK,
+} = require('./src/styles/styles.constants');
 
 module.exports = {
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
     colors: {
       transparent: 'transparent',
       white: WHITE,
+      black: BLACK,
+      yellow: '#EDB507',
+      orange: '#E1692D',
+      blue: '#71BDEF',
       green: {
-        500: LIGHT_GREEN,
-        800: DARK_GREEN,
-      },
-      orange: {
-        500: LIGHT_ORANGE,
-        800: DARK_ORANGE,
+        400: GREEN_400,
+        700: GREEN_700,
       },
       pink: {
-        200: LIGHT_PINK,
+        300: PINK_300,
+        500: PINK_500,
+        700: PINK_700,
+      },
+      gray: {
+        200: GRAY_200,
+        500: GRAY_500,
+        800: GRAY_800,
       },
     },
     fontFamily: {
-      nunitoRegular: [NUNITO_REGULAR, ...defaultTheme.fontFamily.sans],
-      nunitoSemiBold: [NUNITO_SEMIBOLD, ...defaultTheme.fontFamily.sans],
-      nunitoBold: [NUNITO_BOLD, ...defaultTheme.fontFamily.sans],
-      breeRegular: [BREE_REGULAR, ...defaultTheme.fontFamily.sans],
+      interRegular: [INTER_REGULAR, ...defaultTheme.fontFamily.sans],
+      interSemiBold: [INTER_SEMIBOLD, ...defaultTheme.fontFamily.sans],
+      interBold: [INTER_BOLD, ...defaultTheme.fontFamily.sans],
+      albertSemiBold: [ALBERT_SEMIBOLD, ...defaultTheme.fontFamily.sans],
+      albertBold: [ALBERT_BOLD, ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [],
