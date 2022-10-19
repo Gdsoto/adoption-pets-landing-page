@@ -21,17 +21,19 @@ const Hero = () => {
   const { HERO } = HOME_COPIES;
 
   return (
-    <section className='grid grid-cols-2 gap-20 mb-12'>
+    <section className='grid md:grid-cols-2 sm:grid-cols-1 gap-6 lg:gap-20 mb-12'>
       <article className='self-center'>
-        <h1 className='font-albertBold text-8xl max-w-xl text-gray-500 mb-5'>
+        <h1 className='font-albertBold text-5xl lg:text-8xl max-w-xl text-gray-500 mb-5 '>
           {HERO.TITLE}
         </h1>
-        <p className='max-w-sm text-base text-left mb-5'>{HERO.TEXT}</p>
+        <p className='max-w-sm text-sm lg:text-base text-left mb-5'>
+          {HERO.TEXT}
+        </p>
         <Button type='primary' label={HERO.BUTTON.label} icon={<BiHomeAlt />} />
       </article>
-      <article className='grid grid-cols-2 gap-14'>
+      <article className='grid grid-cols-2 gap-4 lg:gap-14'>
         <div className='row-span-2 flex items-center'>
-          <div className='bg-yellow pt-9 rounded-2xl flex justify-center w-full'>
+          <div className='bg-yellow pt-9 rounded-2xl flex justify-center w-full overflow-hidden'>
             <Image src={SmallDog} alt='imagen de perro adorable' />
           </div>
         </div>

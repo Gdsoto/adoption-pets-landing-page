@@ -7,5 +7,8 @@ export const lAYOUT_COPIES = {
     LOG_IN: 'Iniciar sesión',
     SIGN_IN: 'Registrarse',
   },
-  FOOTER: {},
+  FOOTER: {
+    LABEL:
+      'En caso de que encuentres un animal en estas condiciones, te invitamos a unirte a esta causa.',
+  },
 };
